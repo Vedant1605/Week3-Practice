@@ -1,0 +1,27 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  padding: 0.25em;
+  margin: 0.25em;
+}
+/* img{
+   border: 2px solid white; 
+} */
+button {
+  background-color: aqua;
+}
+a {
+  padding: 1em;
+  border-radius: 0.25em;
+  color: black;
+  text-decoration: none;
+  background-color: aqua;
+  font-size: x-large;
+  font-weight: 700;
+}
+.navbar div{
+  align-items: flex-start; 
+  justify-content: space-around;
+}
