@@ -1,28 +1,101 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  background-color: black;
-  color: aliceblue;
-  padding: 0.25em;
-  margin: 0.25em;
 }
-/* img{
-   border: 2px solid white; 
-} */
-button {
-  background-color: aqua;
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(255, 201, 23);
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
   padding: 1em;
-  border-radius: 0.75em;
-  border: 2px solid aqua;
+}
+nav ul li a {
+  font-size: large;
+  margin: 1em;
+  color: white;
+}
+nav ul li a:hover,:active{
+  color: black;
+}
+button {
+  background-color: #ffcb3d;
+  padding: 0.75em;
+  border-radius: 0.5em;
+  border: 2px solid #ffcb3d;
   color: black;
 }
 a {
   text-decoration: none;
   background-color: inherit;
-  font-size: x-large;
+  font-size: large;
   font-weight: 700;
+  padding: 0;
 }
-.navbar div{
-  align-items: flex-start; 
-  justify-content: space-around;
+#about {
+  padding: 0.25em;
+  margin-top: 1em;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  margin: 0.25em;
+}
+.images div {
+  margin: 0.5em;
+}
+#abt_content {
+  background: url(images/pexels-kindel-media-7298844.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  opacity: 0.95;
+  z-index: 0;
+}
+#donate {
+  margin-top: 2em;
+}
+@media (max-width: 600px) {
+  .images {
+    flex-direction: column;
+  }
+  nav ul li a {
+    font-size: small;
+  }
+}
+ /* Animations */
+ .fa-beat {
+  animation:fa-beat 5s ease infinite;
+}
+@keyframes fa-beat {
+  0% {
+    transform:scale(1);
+  }
+  5% {
+    transform:scale(1.25);
+  }
+  20% {
+    transform:scale(1);
+  }
+  30% {
+    transform:scale(1);
+  }
+  35% {
+    transform:scale(1.25);
+  }
+  50% {
+    transform:scale(1);
+  }
+  55% {
+    transform:scale(1.25);
+  }
+  70% {
+    transform:scale(1);
+  }
 }
