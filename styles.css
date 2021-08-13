@@ -50,6 +50,7 @@ nav ul li a:hover,
   font-size: large;
   font-weight: 700;
   padding: 0;
+  cursor: pointer;
 }
 #about {
   padding: 0.25em;
